@@ -94,6 +94,7 @@ a:hover {
 
 .tagebuchItemContainer {
     display: flex;
+    margin-bottom: 10px;
 }
 .tagebuchItemContainer div {
     flex-wrap: nowrap;

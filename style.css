@@ -80,7 +80,10 @@ ul {
 
 input {
     border-radius: 5px;
-
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: cadetblue;
 }
 
 
@@ -95,15 +98,21 @@ a {
 
 
 a:hover {
-    color: white;
+    opacity: 70%;
+}
+
+label {
+    font-size: 15px;
 }
 
 .tagebuchItemContainer {
     display: flex;
     margin-bottom: 10px;
+
 }
 .tagebuchItemContainer div {
     flex-wrap: nowrap;
+    padding: 5px;
 }
 
 .delete {
@@ -120,7 +129,7 @@ img:hover {
 }
 
 #tagebuchListe li {
-    background: radial-gradient(#FFFFFF, #959AA6);
+    background: radial-gradient(#FFFFFF, #d0d5d8);
     border-radius: 5px;
     padding: 10px;
 }
@@ -159,6 +168,13 @@ img:hover {
     margin-bottom: 10px;
 }
 
+#speiseplanForm_Container input {
+
+}
+
+#selectTable ul {
+    padding: 0;
+}
 #speiseplan {
 
 }

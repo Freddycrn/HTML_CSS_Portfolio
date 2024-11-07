@@ -22,7 +22,7 @@ table {
 
 .nutColumn {
     /*border: 1px black solid;*/
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
     text-align: center;
     table-layout: fixed;
@@ -30,23 +30,34 @@ table {
     background: radial-gradient(#C9EA9C, #9AC361);
 }
 
+select {
+    border-radius: 5px;
+    padding: 5px;
+    width: 80%;
+    text-align: center;
+}
 
 
 
 #speiseplan, #tagebuch {
-    border: 2px black solid;
-    border-radius: 10px;
+    border: 1px black solid;
+    border-radius: 5px;
     padding: 10px;
 }
 
 h2, h3, h5 {
     margin: 0;
+    opacity: 70%;
 }
 
 h5 {
     opacity: 50%;
 }
 
+h1 {
+   margin-bottom: 5px;
+    margin-top: 0;
+}
 p{
     margin: 0;
 }
@@ -57,4 +68,56 @@ li {
 
 ul {
     list-style: none    ;
+}
+
+input {
+    border-radius: 5px;
+
+}
+
+#speiseplan {
+    text-align: center;
+}
+
+.midColumn {
+    padding-bottom: 0;
+    margin: 0;
+}
+a {
+    color: black;
+}
+
+
+a:hover {
+    color: white;
+}
+
+.tagebuchItemContainer {
+    display: flex;
+}
+.tagebuchItemContainer div {
+    flex-wrap: nowrap;
+}
+
+.delete {
+    vertical-align: center;
+}
+
+img {
+    height: 30px;
+}
+
+img:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+#tagebuchListe li {
+    background: radial-gradient(#C9EA9C, #9AC361);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#tagebuchListe {
+    padding: 0;
 }

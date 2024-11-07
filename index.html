@@ -34,10 +34,21 @@
             </td>
         </tr>
         <tr>
-            <td id="speiseplan" colspan="3">
+            <td colspan="3" class="midColumn">
                 <h1>Speiseplan</h1>
+            </td>
+            <td colspan="3" class="midColumn">
+                <h1>Tagebuch</h1>
+            </td>
+        </tr>
+        <tr>
+            <td id="speiseplan" colspan="3">
                 <form>
-                    <input type="date">
+                    <select name="date">
+                        <option value="05.11.2024">Dienstag, 05. November</option>
+                        <option value="06.11.2024">Mittwoch, 06. November</option>
+                        <option value="07.11.2024">Donerstag, 07. November</option>
+                    </select>
                     <ul>
                         <li>
                             <input type="radio" id="radio1" name="dishes">
@@ -60,17 +71,24 @@
                 </form>
             </td>
             <td id="tagebuch" colspan="3">
-                <h1>Tagebuch</h1>
-                <ul>
-                    <li>
-                        <h3>test</h3>
-                        <p>test</p>
-                        <p>test</p>
+                <ul id="tagebuchListe">
+                    <li class="tagebuchItemContainer">
+                        <div>
+                            <h1>Dienstag, 05. November</h1>
+                            <a target="_blank" href="https://www.sw-ka.de/en/hochschulgastronomie/speiseplan/mensa_erzberger/"><h2>Pasta in Tomatensoße mit Speck, Peperoncini und Reibekäse</h2></a>
+                            <h3>943 kcal, 32g Protein, 85g Kohlenh., 51g Fett</h3>
+                        </div>
+                        <div class="delete"><img src="https://img.icons8.com/?size=100&id=ZV8D2YZ6852I&format=png&color=1A1A1A" alt="alt"></div>
+
                     </li>
-                    <li>
-                        <h3>test</h3>
-                        <p>test</p>
-                        <p>test</p>
+                    <li class="tagebuchItemContainer">
+                        <div>
+                            <h1>Mittwoch, 06. November</h1>
+                            <a target="_blank" href="https://www.sw-ka.de/en/hochschulgastronomie/speiseplan/mensa_erzberger/"><h2>Mini Frühlingsrollen mit Sweet Chili Soße und
+                                Mienudeln</h2></a>
+                            <h3>1147 kcal, 23g Protein, 144g Kohlenh., 52g Fett</h3>
+                        </div>
+                        <div class="delete"><img src="https://img.icons8.com/?size=100&id=ZV8D2YZ6852I&format=png&color=1A1A1A" alt="alt"></div>
                     </li>
                 </ul>
             </td>

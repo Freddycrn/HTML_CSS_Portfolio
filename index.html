@@ -6,29 +6,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table>
+    <table id="mainTable">
         <tr id="topRow">
-            <td class="nutColumn">
+            <td class="nutColumn" id="energie">
                 <h2>2090 kcal</h2>
                 <h5>Energie</h5>
             </td>
-            <td class="nutColumn">
+            <td class="nutColumn" id="protein">
                 <h2>55 g</h2>
                 <h5>Protein</h5>
             </td>
-            <td class="nutColumn">
+            <td class="nutColumn" id="khydrate">
                 <h2>229 g</h2>
                 <h5>Kohlenhydrate</h5>
             </td>
-            <td class="nutColumn">
+            <td class="nutColumn" id="fett">
                 <h2>103 g</h2>
                 <h5>Fett</h5>
             </td>
-            <td class="nutColumn">
+            <td class="nutColumn" id="kosten">
                 <h2>6 €</h2>
                 <h5>Kosten</h5>
             </td>
-            <td class="nutColumn">
+            <td class="nutColumn" id="veggie">
                 <h2>50 %</h2>
                 <h5>Veggie</h5>
             </td>
@@ -43,32 +43,43 @@
         </tr>
         <tr>
             <td id="speiseplan" colspan="3">
+                <div id="speiseplanForm_Container">
                 <form>
-                    <select name="date">
-                        <option value="05.11.2024">Dienstag, 05. November</option>
-                        <option value="06.11.2024">Mittwoch, 06. November</option>
-                        <option value="07.11.2024">Donerstag, 07. November</option>
-                    </select>
-                    <ul>
-                        <li>
-                            <input type="radio" id="radio1" name="dishes">
-                            <label for="radio1">TEST</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="radio2" name="dishes">
-                            <label for="radio2">TEST</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="radio3" name="dishes">
-                            <label for="radio3">TEST</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="radio4" name="dishes">
-                            <label for="radio4">TEST</label>
-                        </li>
-                    </ul>
+                        <select name="date">
+                            <option value="05.11.2024">Dienstag, 05. November</option>
+                            <option value="06.11.2024">Mittwoch, 06. November</option>
+                            <option value="07.11.2024">Donerstag, 07. November</option>
+                        </select>
+                        <table id="selectTable">
+                            <tr>
+                                <td>Mahlzeiten hinzufügen</td>
+                            </tr>
+                            <tr>
+                                <td class="selectionSection">
+                                    <ul>
+                                        <li>
+                                            <input type="radio" id="radio1" name="dishes">
+                                            <label for="radio1">TEST</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="radio2" name="dishes">
+                                            <label for="radio2">TEST</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="radio3" name="dishes">
+                                            <label for="radio3">TEST</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="radio4" name="dishes">
+                                            <label for="radio4">TEST</label>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
                     <input type="button" value="Hinzufügen">
                 </form>
+                </div>
             </td>
             <td id="tagebuch" colspan="3">
                 <ul id="tagebuchListe">
